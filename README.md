@@ -156,10 +156,9 @@ Follow these steps to run the project locally on your machine.
 ### 1. Clone the Repository
 Open your terminal and run the following command to clone the repo:
 
-```bash
 git clone [https://github.com/DimasTriM/portfolio-main.git](https://github.com/DimasTriM/portfolio-main.git)
 
-```
+
 ```bash
 cd portfolio-main
 
