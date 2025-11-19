@@ -28,7 +28,7 @@ const projects = [
     src: potholeImg,
     color: "#14b8a6", // Teal
     githubLink: "https://github.com/DimasTriM/pothole-detection.git",
-    liveLink: "#",
+    liveLink: "https://pothole-detection-yolov8.streamlit.app/",
   },
   {
     title: "Decision Support System (DSS)",
