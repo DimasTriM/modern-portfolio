@@ -136,11 +136,10 @@ const CertificateSection = () => {
             <motion.div
               key={index}
               variants={cardVariants}
-              className={`relative border rounded-xl p-6 transition-all duration-300 bg-gray-900/50 backdrop-blur-sm flex flex-col h-full group ${
-                hoveredIndex === index
-                  ? "border-teal-500 scale-[1.02] shadow-lg shadow-teal-500/10"
-                  : "border-blue-400/20"
-              }`}
+              className={`relative border rounded-xl p-6 transition-all duration-300 bg-gray-900/50 backdrop-blur-sm flex flex-col h-full group ${hoveredIndex === index
+                ? "border-teal-500 scale-[1.02] shadow-lg shadow-teal-500/10"
+                : "border-blue-400/20"
+                }`}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >

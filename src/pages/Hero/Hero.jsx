@@ -160,9 +160,9 @@ const profile = {
             style={{
               paddingTop:
                 window.innerWidth >= 1360 &&
-                window.innerWidth <= 1370 &&
-                window.innerHeight >= 760 &&
-                window.innerHeight <= 775
+                  window.innerWidth <= 1370 &&
+                  window.innerHeight >= 760 &&
+                  window.innerHeight <= 775
                   ? "12rem"
                   : "",
             }}

@@ -7,6 +7,7 @@ import Header from "./pages/Header/Header";
 import Hero from "./pages/Hero/Hero";
 import Skills from "./pages/Skills/Skills";
 import Certificate from "./pages/Certificate/Certificate";
+import Service from "./pages/Service/Service";
 import Footer from "./components/Footer"; // ✅ Import Footer
 import { Route, Routes } from "react-router-dom";
 
@@ -32,6 +33,7 @@ export default function App() {
           <Route path="/certificate" element={<Certificate />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/service" element={<Service />} />
         </Routes>
       )}
       <Footer /> {/* ✅ Tambahkan Footer di sini */}

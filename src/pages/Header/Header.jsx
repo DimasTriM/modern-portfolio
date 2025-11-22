@@ -8,6 +8,7 @@ import {
   FaCode,
   FaEnvelope,
   FaBars,
+  FaConciergeBell,
 } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 
@@ -42,6 +43,7 @@ export default function Header() {
       path: "/Certificate",
     },
     { id: "projects", icon: FaLaptopCode, text: "Projects", path: "/projects" },
+    { id: "service", icon: FaConciergeBell, text: "Service", path: "/service" },
     { id: "contact", icon: FaEnvelope, text: "Contact", path: "/contact" },
   ];
 
@@ -77,17 +79,15 @@ export default function Header() {
                     className={`px-3 py-2 md:py-1.5 rounded-lg md:rounded-full text-sm font-medium
                       transition-all duration-300 flex items-center gap-2
                       hover:bg-white/10 
-                      ${
-                        activeLink === id
-                          ? "bg-white/15 text-white"
-                          : "text-gray-300 hover:text-white"
+                      ${activeLink === id
+                        ? "bg-white/15 text-white"
+                        : "text-gray-300 hover:text-white"
                       }
                     `}
                   >
                     <Icon
-                      className={`text-base ${
-                        activeLink === id ? "scale-110" : ""
-                      }`}
+                      className={`text-base ${activeLink === id ? "scale-110" : ""
+                        }`}
                     />
                     <span className="inline">{text}</span>
                   </Link>

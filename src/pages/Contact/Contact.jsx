@@ -155,9 +155,8 @@ export default function Contact() {
                     <input
                       type="text"
                       placeholder="Your Name"
-                      className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
-                        errors.name ? "border-red-500" : "border-gray-700"
-                      } focus:border-blue-500 focus:outline-none transition-colors text-white placeholder-gray-400`}
+                      className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${errors.name ? "border-red-500" : "border-gray-700"
+                        } focus:border-blue-500 focus:outline-none transition-colors text-white placeholder-gray-400`}
                       value={formData.name}
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
@@ -176,9 +175,8 @@ export default function Contact() {
                     <input
                       type="email"
                       placeholder="Email"
-                      className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
-                        errors.email ? "border-red-500" : "border-gray-700"
-                      } focus:border-blue-500 focus:outline-none transition-colors text-white placeholder-gray-400`}
+                      className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${errors.email ? "border-red-500" : "border-gray-700"
+                        } focus:border-blue-500 focus:outline-none transition-colors text-white placeholder-gray-400`}
                       value={formData.email}
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
@@ -197,9 +195,8 @@ export default function Contact() {
                     <input
                       type="text"
                       placeholder="Subject"
-                      className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
-                        errors.subject ? "border-red-500" : "border-gray-700"
-                      } focus:border-blue-500 focus:outline-none transition-colors text-white placeholder-gray-400`}
+                      className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${errors.subject ? "border-red-500" : "border-gray-700"
+                        } focus:border-blue-500 focus:outline-none transition-colors text-white placeholder-gray-400`}
                       value={formData.subject}
                       onChange={(e) =>
                         setFormData({ ...formData, subject: e.target.value })
@@ -218,9 +215,8 @@ export default function Contact() {
                     <textarea
                       placeholder="Message"
                       rows="4"
-                      className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
-                        errors.message ? "border-red-500" : "border-gray-700"
-                      } focus:border-blue-500 focus:outline-none transition-colors resize-none text-white placeholder-gray-400`}
+                      className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${errors.message ? "border-red-500" : "border-gray-700"
+                        } focus:border-blue-500 focus:outline-none transition-colors resize-none text-white placeholder-gray-400`}
                       value={formData.message}
                       onChange={(e) =>
                         setFormData({ ...formData, message: e.target.value })
@@ -249,11 +245,10 @@ export default function Contact() {
               {/* Status Message */}
               {status && (
                 <div
-                  className={`mt-4 p-4 rounded-lg flex items-center gap-2 ${
-                    status.type === "success"
-                      ? "bg-green-500/10 text-green-400 border border-green-500/20"
-                      : "bg-red-500/10 text-red-400 border border-red-500/20"
-                  }`}
+                  className={`mt-4 p-4 rounded-lg flex items-center gap-2 ${status.type === "success"
+                    ? "bg-green-500/10 text-green-400 border border-green-500/20"
+                    : "bg-red-500/10 text-red-400 border border-red-500/20"
+                    }`}
                 >
                   {status.type === "success" ? (
                     <CheckCircle className="w-5 h-5" />
